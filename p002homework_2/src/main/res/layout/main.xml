@@ -1,0 +1,164 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/colorBar"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:textColor="@color/colorTextW"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alarm"
+
+        android:layout_marginRight="170dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/check_all" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/colorApp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/panorama_fisheye"
+            android:visibility="visible" />
+        <TextView
+            android:id="@+id/FishOil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fish oil"
+            android:textColor="@color/colorTextW"
+            android:textSize="18sp"
+            android:layout_marginRight="218dp"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dots_vertical"
+            android:visibility="visible"
+            android:layout_gravity="top"
+            android:cropToPadding="false" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/colorTextW"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+        android:id="@+id/Sched"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scheduled for 11:00"
+        android:textSize="15sp"
+        android:textColor="@color/colorTextBlack"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/Take"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take 1"
+            android:textSize="15sp"
+            android:textColor="@color/colorTextBlack"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/Next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next refill in 0 Pills"
+            android:textColor="@color/colorTextG"
+            android:layout_marginTop="60dp"
+            android:visibility="visible">
+        </TextView>
+        <View
+            android:layout_width="wrap_content"
+            android:background="@color/colorTextG"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/colorTextW"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/Skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKIP"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextG"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:id="@+id/Snooze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SNOOZE"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextG"
+            android:layout_marginRight="195dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check"
+            android:layout_marginTop="-3.5dp" />
+
+        <TextView
+            android:id="@+id/TakeTake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAKE"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextB"/>
+
+    </LinearLayout>
+</LinearLayout>
