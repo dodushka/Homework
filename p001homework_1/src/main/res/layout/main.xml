@@ -2,73 +2,43 @@
      android:layout_width="match_parent"
      android:layout_height="match_parent"
      android:background="@drawable/pic"
-
-    android:baselineAligned="true"
-    android:orientation="vertical"
-    android:gravity="center_horizontal">
+     android:baselineAligned="true"
+     android:orientation="vertical"
+     android:gravity="center_horizontal">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="BLOGLOVIN`"
-        android:textColor="@color/colorButtonW"
-        android:textSize="52sp"
-        android:textStyle="bold"
-        android:id="@+id/Bloglovin"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="170dp"
-        android:gravity="center_horizontal" />
+        android:text="@string/blogloving_text"
+        android:id="@+id/bloglovin"
+        style="@style/TextBloglovingStyle" />
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Follow your favorite blogs."
-        android:textColor="@color/colorButtonW"
-        android:textSize="25sp"
-        android:id="@+id/Follow"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="-15dp" />
+        android:text="@string/follow_you"
+        android:textColor="@color/color_button_w"
+        android:textSize="@dimen/text_follow"
+        android:id="@+id/follow"
+        android:layout_marginTop="@dimen/text_follow_margin_top"
+        style="@style/TextFollowYou" />
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CONNECT WITH  FACEBOOK"
-        android:textColor="@color/colorButtonW"
-        android:textSize="19sp"
-        android:background="@color/colorBackgroundConnect"
+        style="@style/LoginButt"
+        android:text="@string/connect"
+        android:textColor="@color/color_button_w"
+        android:background="@drawable/button_connect"
         android:id="@+id/connect"
-        android:layout_gravity="center_horizontal"
-
-        android:layout_marginLeft="11dp"
-        android:layout_marginRight="11dp"
-        android:layout_marginTop="80dp" />
+        android:layout_marginTop="@dimen/connect_margin_top" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SIGN UP"
-        android:textColor="@color/colorButtonW"
-        android:textSize="19sp"
-        android:background="@color/colorBackgroundSign"
-        android:id="@+id/sign"
-
-        android:layout_marginLeft="11dp"
-        android:layout_marginRight="11dp"
-        android:layout_marginTop="7dp"
-        android:layout_gravity="center_horizontal" />
+        style="@style/LoginButt"
+        android:text="@string/sign"
+        android:textColor="@color/color_button_w"
+        android:background="@drawable/button_sign"
+        android:id="@+id/sign"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="LOG IN"
-        android:textColor="@color/colorButtonG"
-        android:textSize="19sp"
-        android:background="@color/colorBackgroundLog"
-        android:id="@+id/log"
-        android:layout_gravity="center_horizontal"
-
-        android:layout_marginLeft="11dp"
-        android:layout_marginRight="11dp"
-        android:layout_marginTop="7dp" />
+        style="@style/LoginButt"
+        android:text="@string/log_in"
+        android:textColor="@color/color_button_g"
+        android:background="@drawable/button_log_in"
+        android:id="@+id/log"/>
 
 </LinearLayout>

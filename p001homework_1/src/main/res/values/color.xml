@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorButtonW">#FFFFFF</color>
-    <color name="colorButtonG">#808080</color>
-    <color name="colorBackgroundConnect">#465993</color>
-    <color name="colorBackgroundSign">#487cf4</color>
-    <color name="colorBackgroundLog">#f5f5f5</color>
+    <color name="color_button_w">#FFFFFF</color>
+    <color name="color_button_g">#808080</color>
+    <color name="color_background_connect">#465993</color>
+    <color name="color_background_sign">#487cf4</color>
+    <color name="color_background_log">#f5f5f5</color>
 </resources>

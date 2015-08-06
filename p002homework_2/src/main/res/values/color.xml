@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorBar">#10bbb3</color>
-    <color name="colorTextW">#ffffff</color>
-    <color name="colorTextBlack">#000001</color>
-    <color name="colorTextG">#737373</color>
-    <color name="colorTextB">#0dbeb4</color>
-    <color name="colorApp">#ef6d00</color>
+    <color name="color_bar">#10bbb3</color>
+    <color name="color_text_w">#ffffff</color>
+    <color name="color_text_black">#000001</color>
+    <color name="color_text_g">#737373</color>
+    <color name="color_text_b">#0dbeb4</color>
+    <color name="color_app">#ef6d00</color>
 </resources>

@@ -1,164 +1,149 @@
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    style="@style/LayautVertical">
 
-    tools:context=".MainActivity" >
+    <LinearLayout style="@style/LayautHorizontal">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:background="@color/colorBar"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingBottom="@dimen/activity_vertical_margin">
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner"
-        android:textColor="@color/colorTextW"
-        />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/alarm"
-
-        android:layout_marginRight="170dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/check_all" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:background="@color/colorApp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp">
-        <ImageView
+        <Spinner
+            android:id="@+id/spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/panorama_fisheye"
-            android:visibility="visible" />
-        <TextView
-            android:id="@+id/FishOil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fish oil"
-            android:textColor="@color/colorTextW"
-            android:textSize="18sp"
-            android:layout_marginRight="218dp"
-            android:layout_marginLeft="10dp" />
+            android:textColor="@color/color_text_w"
+            tools:layout_height="@dimen/spinner_layout_height"
+            tools:layout_width="@dimen/spinner_layout_width" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/dots_vertical"
-            android:visibility="visible"
-            android:layout_gravity="top"
-            android:cropToPadding="false" />
+            android:layout_marginRight="@dimen/image_margin_r"
+            android:src="@drawable/alarm"
+            style="@style/ImageStyle"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin" />
 
-</LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:background="@color/colorTextW"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
-
-        <TextView
-        android:id="@+id/Sched"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Scheduled for 11:00"
-        android:textSize="15sp"
-        android:textColor="@color/colorTextBlack"
-            android:layout_marginTop="10dp" />
-
-        <TextView
-            android:id="@+id/Take"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Take 1"
-            android:textSize="15sp"
-            android:textColor="@color/colorTextBlack"
-            android:layout_marginTop="10dp" />
-
-        <TextView
-            android:id="@+id/Next"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Next refill in 0 Pills"
-            android:textColor="@color/colorTextG"
-            android:layout_marginTop="60dp"
-            android:visibility="visible">
-        </TextView>
-        <View
-            android:layout_width="wrap_content"
-            android:background="@color/colorTextG"
-            android:layout_height="0.5dp"
-            android:layout_marginTop="20dp" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:background="@color/colorTextW"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
-
-        <TextView
-            android:id="@+id/Skip"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SKIP"
-            android:textSize="12sp"
-            android:textColor="@color/colorTextG"
-            android:layout_marginRight="20dp" />
-
-        <TextView
-            android:id="@+id/Snooze"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SNOOZE"
-            android:textSize="12sp"
-            android:textColor="@color/colorTextG"
-            android:layout_marginRight="195dp" />
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/check"
-            android:layout_marginTop="-3.5dp" />
-
-        <TextView
-            android:id="@+id/TakeTake"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TAKE"
-            android:textSize="12sp"
-            android:textColor="@color/colorTextB"/>
-
+            style="@style/ImageStyle"
+            android:src="@drawable/check_all" />
     </LinearLayout>
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_right"
+        android:layout_marginTop="@dimen/padding_top"
+        app:cardCornerRadius="@dimen/card_corner_r">
+
+        <LinearLayout
+            style="@style/LayautVertical">
+
+            <LinearLayout
+                style="@style/LayautHorizontal"
+                 android:background="@color/color_app">
+
+                <ImageView
+                    style="@style/ImageStyle"
+                    android:src="@drawable/panorama_fisheye"/>
+
+                <TextView
+                    android:id="@+id/fish_oil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_view_margin_left"
+                    android:layout_marginRight="@dimen/text_view_margin_right"
+                    android:text="@string/fish_oil"
+                    android:textColor="@color/color_text_w"
+                    android:textSize="@dimen/text_view_size" />
+
+                <ImageView
+                    style="@style/ImageStyle"
+                    android:layout_gravity="top"
+                    android:cropToPadding="false"
+                    android:src="@drawable/dots_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayautVertical"
+                android:background="@color/color_text_w"
+                android:paddingBottom="@dimen/padding_bottom"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right"
+                android:paddingTop="@dimen/padding_top">
+
+                <TextView
+                    android:id="@+id/sched"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_top"
+                    android:text="@string/scheduled"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_scheduled" />
+
+                <TextView
+                    android:id="@+id/take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_top"
+                    android:text="@string/take_1"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_scheduled" />
+
+                <TextView
+                    android:id="@+id/next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="@string/next"
+                    android:textColor="@color/color_text_g" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_size"
+                    android:layout_marginTop="@dimen/view_matgin_top"
+                    android:background="@drawable/line" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayautHorizontal"
+                android:background="@color/color_text_w"
+                android:paddingBottom="@dimen/padding_bottom"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right"
+                android:paddingTop="@dimen/padding_top">
+
+                <TextView
+                    android:id="@+id/skip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/view_matgin_top"
+                    android:text="@string/skip"
+                    android:textColor="@color/color_text_g"
+                    android:textSize="@dimen/text_view_last" />
+
+                <TextView
+                    android:id="@+id/Snooze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/tview_margin_right"
+                    android:text="@string/snooze"
+                    android:textColor="@color/color_text_g"
+                    android:textSize="@dimen/text_view_last" />
+
+                <ImageView
+                    style="@style/ImageStyle"
+                    android:layout_marginTop="@dimen/image_margin_top"
+                    android:src="@drawable/check" />
+
+                <TextView
+                    android:id="@+id/taketake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/taketake"
+                    android:textColor="@color/color_text_b"
+                    android:textSize="@dimen/text_view_last" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 </LinearLayout>

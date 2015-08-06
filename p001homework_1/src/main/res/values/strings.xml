@@ -3,4 +3,9 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="blogloving_text">BLOGLOVIN`</string>
+    <string name="follow_you">Follow your favorite blogs.</string>
+    <string name="connect">CONNECT WITH FACEBOOK</string>
+    <string name="sign">SIGN UP</string>
+    <string name="log_in">LOG IN</string>
 </resources>
