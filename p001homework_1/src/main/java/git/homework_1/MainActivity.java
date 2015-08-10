@@ -1,17 +1,65 @@
 package git.homework_1;
 
+import android.app.Activity;
+import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+import java.util.Random;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity  {
+
+    Button connect;
+    Button sign;
+    Button log;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+
+        connect = (Button)findViewById(R.id.connect);
+        sign=(Button)findViewById(R.id.sign);
+        log=(Button)findViewById(R.id.log);
+
+
+
+        View.OnClickListener oclBtn= new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Random rnd = new Random();
+                int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
+
+                switch (v.getId()) {
+                    case R.id.connect:
+                        connect.setBackgroundColor(color);
+                        Toast.makeText(MainActivity.this, "this is button CONNECT WITH FACEBOOK",Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.sign:
+                        sign.setBackgroundColor(color);
+                        Toast.makeText(MainActivity.this, "this is button SIGN UP",Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.log:
+                        log.setBackgroundColor(color);
+                        Toast.makeText(MainActivity.this, "this is button LOG IN",Toast.LENGTH_LONG).show();
+                        break;
+                }
+
+
+            }
+
+
+        };
+        connect.setOnClickListener(oclBtn);
+        sign.setOnClickListener(oclBtn);
+        log.setOnClickListener(oclBtn);
     }
 
     @Override
@@ -35,4 +83,6 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }
