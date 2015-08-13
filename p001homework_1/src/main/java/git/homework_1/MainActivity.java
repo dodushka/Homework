@@ -38,18 +38,17 @@ public class MainActivity extends Activity {
         sign = (Button) findViewById(R.id.sign);
         log = (Button) findViewById(R.id.log);
 
-       //на уровне интерфейсов не на уровни конкретики любой вью может иметь бэкграунд
+        //на уровне интерфейсов не на уровни конкретики любой вью может иметь бэкграунд
         View.OnClickListener oclBtn = new View.OnClickListener() {
-            @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-            @Override
             public void onClick(View v) {
                 Random rnd = new Random();
                 int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
                 GradientDrawable sd = (GradientDrawable) v.getBackground().mutate();
                 sd.setColor(color);
                 sd.invalidateSelf();
-                if(v instanceof TextView){
-                Toast.makeText(MainActivity.this, "this is button  " + ((TextView) v).getText(), Toast.LENGTH_LONG).show();}
+                if (v instanceof TextView) {
+                    Toast.makeText(MainActivity.this, "this is button  " + ((TextView) v).getText(), Toast.LENGTH_LONG).show();
+                }
             }
 
 
