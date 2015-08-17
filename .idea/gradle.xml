@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/hwmenu" />
             <option value="$PROJECT_DIR$/p001homework_1" />
             <option value="$PROJECT_DIR$/p002homework_2" />
           </set>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HWmenu</string>
+
+    <string name="menu_view">View in Google Play Store</string>
+    <string name="menu_print">Print...</string>
+    <string name="menu_clear"> Clear help history</string>
+    <string name="menu_version">Version info</string>
+    <string name="menu_privacy"> Privacy police</string>
+    <string name="menu_open">Open Source licenses</string>
+    <string name="menu_term">Terms of service</string>
+    <string name="text_menu">Расширенное меню</string>
+    <string name="title_activity_one">OneActivity</string>
+
+    <string name="text_this">This is Activity Two</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_two">TwoActivity</string>
+    <string name="title_activity_six">SixActivity</string>
+
+    <string name="title_six">Licenses</string>
+</resources>
